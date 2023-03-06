@@ -11,6 +11,9 @@ def main():
 
 def search_dad_jokes (search_term, page=1, limit=20):
 
+    # clean the search term
+    # search_term = str(search_term).strip().lower()
+
     # Setup the query string parameters
     query_params = {
         'page': page,
