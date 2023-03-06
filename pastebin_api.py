@@ -20,7 +20,7 @@ def post_new_paste(title, body_text, expiration='10M', listed=True):
         str: URL of the new paste. None if unsuccessful.
     """
 
-    # Ceate dictionary of parameter values
+    # Create dictionary of parameter values
     params = {
     'api_dev_key': DEVELOPER_API_KEY,
     'api_option': 'paste',
