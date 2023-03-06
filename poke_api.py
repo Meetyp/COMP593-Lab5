@@ -17,6 +17,6 @@ def fetch_pokemon_info(name):
     else:
         print("failure")
         print(f"Response code: {resp_msg.status_code} ({resp_msg.reason})")
-        print(f"Error: {resp_msg.text}")
+        # print(f"Error: {resp_msg.text}")
          
     pass

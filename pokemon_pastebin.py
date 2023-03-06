@@ -5,9 +5,11 @@ import sys
 def main():
     name = get_pokemon_name()
     pokemon_information = fetch_pokemon_info(name)
-    title, body = create_info_for_paste(pokemon_information)
-    post_url = post_new_paste(title,body,'1M')
-    print(post_url)
+
+    if pokemon_information:
+        title, body = create_info_for_paste(pokemon_information)
+        post_url = post_new_paste(title,body,'1M')
+        print(post_url)
 
 def get_pokemon_name():
     params_length = len(sys.argv)-1
