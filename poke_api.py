@@ -1,6 +1,14 @@
 import requests
 
 def fetch_pokemon_info(name):
+    """Create a new module/function to be use in another file 
+
+    Args:
+        name (str): Name of the pokemon
+
+    Returns:
+        Dictionary: Return the dictionary of all the data of given pokemon name.
+    """
     pokemon_name=str(name).strip().lower()
     POKE_URL=f'https://pokeapi.co/api/v2/pokemon/{pokemon_name}'
 
