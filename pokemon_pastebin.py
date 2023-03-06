@@ -16,7 +16,7 @@ def get_pokemon_name():
     if params_length > 0:
         return sys.argv[1]
     else:
-        print(f"Error: Missing parameters.")
+        print("Error: Missing parameters.")
         sys.exit(1)
 
 def create_info_for_paste(data):
